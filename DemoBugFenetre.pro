@@ -11,13 +11,17 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = DemoBugFenetre
 TEMPLATE = app
 
+QMAKE_MAC_SDK = macosx10.9
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    Dialog.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    Dialog.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    Dialog.ui
 
 CONFIG += mobility
 MOBILITY = 
