@@ -15,13 +15,16 @@ QMAKE_MAC_SDK = macosx10.9
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    Dialog.cpp
+    Dialog.cpp \
+    dialogeditmedecin.cpp
 
 HEADERS  += mainwindow.h \
-    Dialog.h
+    Dialog.h \
+    dialogeditmedecin.h
 
 FORMS    += mainwindow.ui \
-    Dialog.ui
+    Dialog.ui \
+    dialogeditmedecin.ui
 
 CONFIG += mobility
 MOBILITY = 
